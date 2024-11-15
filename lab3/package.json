@@ -1,0 +1,21 @@
+{
+    "name": "js-tasks",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/core.js",
+    "author": "",
+    "scripts": {
+        "test": "mocha src",
+        "prettier": "prettier -w ../../../OneDrive/Рабочий стол/каркас джава",
+        "prettier:check": "prettier -c ../../../OneDrive/Рабочий стол/каркас джава"
+    },
+    "devDependencies": {
+        "lint-staged": "^13.0.3",
+        "mocha": "^10.1.0",
+        "prettier": "2.7.1"
+    },
+    "lint-staged": {
+        "**/*": "prettier --write ."
+    },
+    "license": "MIT"
+}
