@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>1 Лабораторная работа по вебу</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+<h1>Лабораторная работа №4. Кузнецов Ярослав</h1>
+
+<div class="grid-container">
+  <div class="grid-item header">Мем</div>
+  <div class="grid-item header">Ссылка</div>
+  <div class="grid-item header">Моя оценка</div>
+
+  <div class="grid-item">С котенком</div>
+  <div class="grid-item"><a href="meme1.html">Первый мем</a></div>
+  <div class="grid-item">8/10</div>
+
+  <div class="grid-item">Про разработку</div>
+  <div class="grid-item"><a href="meme2.html">Второй мем</a></div>
+  <div class="grid-item">10/10</div>
+
+  <div class="grid-item">С собакой</div>
+  <div class="grid-item"><a href="meme3.html">Третий мем</a></div>
+  <div class="grid-item">6/10</div>
+
+</div>
+
+<div class="center-container">
+  <a href="loadData.html" class="link-button">Перейти на страницу загрузки данных с сервера</a>
+  <h2>Форма отправки данных</h2>
+  <form id="postForm">
+    <label for="username">Имя пользователя:</label>
+    <input type="text" id="username" name="username" placeholder="Введите имя" required>
+    <br><br>
+    <label for="comment">Комментарий:</label>
+    <textarea id="comment" name="comment" rows="4" placeholder="Введите комментарий" required></textarea>
+    <br><br>
+    <button type="submit">Отправить</button>
+  </form>
+</div>
+<script src="../formHandler.js"></script>
+</body>
+</html>

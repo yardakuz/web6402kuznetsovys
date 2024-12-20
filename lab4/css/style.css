@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #78dce8; /* Цвет фона */
+}
+
+h1{
+  text-align: center;
+  font-family: 'Arial', 'Verdana', sans-serif;
+  font-size: 21px;
+}
+h2{
+  text-align: center;
+  font-family: "Comic Sans MS";
+}
+a {
+  color: white;
+  text-align: center;
+}
+.center-image{
+  text-align: center;
+}
+/* Стили ссылки */
+.link-button {
+  display: inline-block; /* Делаем ссылку блочно-строчной */
+  text-decoration: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  margin: 20px auto; /* Центрирование с помощью margin */
+}
+
+
+/* Основной Flexbox-контейнер */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Заголовок "таблицы" */
+.data-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 0; /* Убираем отступ снизу */
+}
+
+/* Строки данных */
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.data-row:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+/* Элементы строки */
+.data-item {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #ccc; /* Разделение элементов */
+}
+
+.data-item:last-child {
+  border-right: none;
+}
+
+/* Кнопка */
+.load-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.load-button:hover {
+  background-color: #45a049;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+.grid-item {
+  background-color: lightcoral;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 1.2em;
+}
+.header {
+  font-weight: bold; /* Жирный шрифт */
+  background-color: #4CAF50; /* Зелёный фон */
+  color: white; /* Белый текст */
+  text-align: center; /* Выравнивание по центру */
+  padding: 10px; /* Отступы */
+  border: 2px solid #333; /* Рамка */
+}
+
+/* Контейнер для центрирования формы и ссылки */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование по горизонтали */
+  justify-content: center; /* Центрирование по вертикали */
+  gap: 20px; /* Отступ между элементами */
+  margin: 20px auto;
+}
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Смещение вниз */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Класс анимации */
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards; /* Плавное появление */
+}
+
+/* Строки данных */
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  opacity: 0; /* Начальное состояние (прозрачное) */
+}
+
+.data-row:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+/* Элементы строки */
+.data-item {
+  flex: 1;
+  text-align: center;
+}
+
